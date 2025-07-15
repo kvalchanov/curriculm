@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="curriculum-grid-container-pls-no-conflicts-with-class-name">
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="weeks-range-header-pls-no-conflicts-with-class-name">Weeks 1-4</div>
+            <div class="weeks-range-header-pls-no-conflicts-with-class-name">Weeks 5-14</div>
+            <div class="weeks-range-header-pls-no-conflicts-with-class-name">Weeks 15-21</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="module-header-pls-no-conflicts-with-class-name" style="border-left: none;">Core</div>
+            <div class="module-header-pls-no-conflicts-with-class-name">OOP</div>
+            <div class="module-header-pls-no-conflicts-with-class-name">DSA</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="curriculum-box-pls-no-conflicts-with-class-name tech-box-pls-no-conflicts-with-class-name"
+                style="grid-column: span 10 / span 10;">Solve Tasks</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="curriculum-box-pls-no-conflicts-with-class-name ss-box-pls-no-conflicts-with-class-name"
+                style="grid-column: span 10 / span 10;">Self-leadership</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="curriculum-box-pls-no-conflicts-with-class-name empty-box-pls-no-conflicts-with-class-name"
+                style="grid-column: span 10 / span 10;">.</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="curriculum-box-pls-no-conflicts-with-class-name empty-box-pls-no-conflicts-with-class-name"
+                style="grid-column: span 10 / span 10;">.</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+            <div class="curriculum-box-pls-no-conflicts-with-class-name m-box-pls-no-conflicts-with-class-name"
+                style="grid-column: span 10 / span 10; grid-column-start: 2;">Mentorship</div>
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+
+        </div>
+        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
+
+        </div>
+    </div>
+
+    <style>
+        .curriculum-grid-container-pls-no-conflicts-with-class-name {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 2px 0px 2px;
+            border-left: 2px solid lightgray;
+            border-right: 2px solid lightgray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+        }
+
+        .curriculum-grid-row-pls-no-conflicts-with-class-name {
+            display: grid;
+            grid-template-columns: repeat(30, 1fr);
+        }
+
+        .weeks-range-header-pls-no-conflicts-with-class-name {
+            grid-column: span 10 / span 10;
+            font-size: 16pt;
+            opacity: 0.5;
+            padding-left: 5px;
+        }
+
+        .module-header-pls-no-conflicts-with-class-name {
+            grid-column: span 10 / span 10;
+            font-size: 20pt;
+            border-left: 2px solid lightgrey;
+            border-bottom: 2px solid lightgray;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+
+        .curriculum-box-pls-no-conflicts-with-class-name {
+            font-size: 18pt;
+            text-align: right;
+            margin-bottom: 5px;
+            padding-right: 5px;
+        }
+
+        .tech-box-pls-no-conflicts-with-class-name {
+            background-color: rgb(146, 208, 80, 0.3);
+        }
+
+        .ss-box-pls-no-conflicts-with-class-name {
+            background-color: rgb(255, 192, 0, 0.3);
+        }
+
+        .pr-box-pls-no-conflicts-with-class-name {
+            background-color: rgb(112, 48, 160, 0.3);
+        }
+
+        .sp-box-pls-no-conflicts-with-class-name {
+            background-color: rgb(89, 89, 89, 0.3);
+        }
+
+        .m-box-pls-no-conflicts-with-class-name {
+            background-color: rgb(200, 0, 100, 0.3);
+        }
+
+        .empty-box-pls-no-conflicts-with-class-name {
+            background-color: transparent;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        const data = ["red", "yellow", "blue", "green", "brown", "orange", "aqua", "lightblue", "gray", "red", "yellow", "blue", "green", "brown", "orange", "aqua", "lightblue", "gray"]
+        document.addEventListener("DOMContentLoaded", () => {
+            const targets = document.querySelectorAll(".child");
+            console.log(targets)
+            for (let index = 0; index < targets.length; index++) {
+                targets[index].classList.add(`div${index + 1}`)
+                targets[index].style.backgroundColor = `${data[index]}`
+                if (index === 16) {
+                    targets[index].style.backgroundColor = "transparent"
+                    targets[index].textContent = ""
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
