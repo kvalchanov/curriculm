@@ -8,131 +8,403 @@
 </head>
 
 <body>
-    <div class="curriculum-grid-container-pls-no-conflicts-with-class-name">
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="weeks-range-header-pls-no-conflicts-with-class-name">Weeks 1-4</div>
-            <div class="weeks-range-header-pls-no-conflicts-with-class-name">Weeks 5-14</div>
-            <div class="weeks-range-header-pls-no-conflicts-with-class-name">Weeks 15-21</div>
+    <div class="curriculum-grid-container">
+        <div class="curriculum-grid-row curriculum-fs-large">
+            <div class="legend-header curriculum-box-padding curriculum-box-margin">Legend: </div>
         </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="module-header-pls-no-conflicts-with-class-name" style="border-left: none;">Core</div>
-            <div class="module-header-pls-no-conflicts-with-class-name">OOP</div>
-            <div class="module-header-pls-no-conflicts-with-class-name">DSA</div>
+        <div class="curriculum-grid-row curriculum-fs-small"
+            style="border-bottom: 2px solid gray; margin-bottom: 3em;">
+            <div class="legend-header tech-box curriculum-box-padding curriculum-box-margin">Tech
+                sessions</div>
+            <div class="legend-header ss-box curriculum-box-padding curriculum-box-margin">
+                Soft-skills sessions</div>
+            <div class="legend-header pr-box curriculum-box-padding curriculum-box-margin">Progress
+                Reviews</div>
+            <div class="legend-header sp-box curriculum-box-padding curriculum-box-margin">
+                Self-preparation</div>
+            <div class="legend-header tp-box curriculum-box-padding curriculum-box-margin">Team
+                Project</div>
+            <div class="legend-header m-box curriculum-box-padding curriculum-box-margin">Mentor
+                program</div>
         </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="curriculum-box-pls-no-conflicts-with-class-name tech-box-pls-no-conflicts-with-class-name"
-                style="grid-column: span 10 / span 10;">Solve Tasks</div>
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="curriculum-box-pls-no-conflicts-with-class-name ss-box-pls-no-conflicts-with-class-name"
-                style="grid-column: span 10 / span 10;">Self-leadership</div>
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="curriculum-box-pls-no-conflicts-with-class-name empty-box-pls-no-conflicts-with-class-name"
-                style="grid-column: span 10 / span 10;">.</div>
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="curriculum-box-pls-no-conflicts-with-class-name empty-box-pls-no-conflicts-with-class-name"
-                style="grid-column: span 10 / span 10;">.</div>
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-            <div class="curriculum-box-pls-no-conflicts-with-class-name m-box-pls-no-conflicts-with-class-name"
-                style="grid-column: span 10 / span 10; grid-column-start: 2;">Mentorship</div>
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
 
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-
-        </div>
-        <div class="curriculum-grid-row-pls-no-conflicts-with-class-name">
-
-        </div>
     </div>
 
     <style>
-        .curriculum-grid-container-pls-no-conflicts-with-class-name {
+        .curriculum-grid-container {
             display: flex;
             flex-direction: column;
-            padding: 0px 2px 0px 2px;
-            border-left: 2px solid lightgray;
-            border-right: 2px solid lightgray;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-style: italic;
+            padding: 0em 0.1em 0em 0.1em;
+            border-left: 0.1em solid lightgray;
+            border-right: 0.1em solid lightgray;
+            font-family: "Poppins",sans-serif;
+            overflow-wrap: anywhere;
         }
 
-        .curriculum-grid-row-pls-no-conflicts-with-class-name {
+        .curriculum-grid-row {
             display: grid;
             grid-template-columns: repeat(30, 1fr);
         }
 
-        .weeks-range-header-pls-no-conflicts-with-class-name {
-            grid-column: span 10 / span 10;
-            font-size: 16pt;
+        .weeks-range-header {
             opacity: 0.5;
-            padding-left: 5px;
         }
 
-        .module-header-pls-no-conflicts-with-class-name {
-            grid-column: span 10 / span 10;
-            font-size: 20pt;
-            border-left: 2px solid lightgrey;
-            border-bottom: 2px solid lightgray;
-            padding-left: 5px;
-            padding-bottom: 10px;
-            margin-bottom: 5px;
+        .legend-header {
+            grid-column: span 5 / span 5;
+            margin-right: 0.1em;
         }
 
-        .curriculum-box-pls-no-conflicts-with-class-name {
-            font-size: 18pt;
+        .module-header {
+            border-left: 0.1em solid lightgrey;
+            border-bottom: 0.1em solid lightgray;
+            padding-bottom: 0.5em;
+        }
+
+        .curriculum-box {
             text-align: right;
-            margin-bottom: 5px;
-            padding-right: 5px;
+            margin-left: 0.1em;
+            margin-right: 0.1em;
+            padding-right: 0.25em;
         }
 
-        .tech-box-pls-no-conflicts-with-class-name {
+        .curriculum-fs-large {
+            font-size: 20px;
+        }
+
+        .curriculum-fs-small {
+            font-size: 14px;
+        }
+
+        .curriculum-box-padding {
+            padding-left: 0.25em;
+        }
+
+        .curriculum-box-margin {
+            margin-bottom: 0.1em;
+        }
+
+        .tech-box {
             background-color: rgb(146, 208, 80, 0.3);
         }
 
-        .ss-box-pls-no-conflicts-with-class-name {
+        .ss-box {
             background-color: rgb(255, 192, 0, 0.3);
         }
 
-        .pr-box-pls-no-conflicts-with-class-name {
+        .pr-box {
             background-color: rgb(112, 48, 160, 0.3);
         }
 
-        .sp-box-pls-no-conflicts-with-class-name {
+        .sp-box {
             background-color: rgb(89, 89, 89, 0.3);
         }
 
-        .m-box-pls-no-conflicts-with-class-name {
+        .m-box {
             background-color: rgb(200, 0, 100, 0.3);
         }
 
-        .empty-box-pls-no-conflicts-with-class-name {
+        .tp-box {
+            background-color: rgb(0, 176, 240, 0.3);
+        }
+
+        .empty-box {
             background-color: transparent;
             opacity: 0;
         }
+
+        @media (min-width: 1600px) {
+            .curriculum-fs-large {
+                font-size: 24px;
+            }
+
+            .curriculum-fs-small {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1600px) {
+            .curriculum-fs-large {
+                font-size: 20px;
+            }
+
+            .curriculum-fs-small {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 999px) {
+            .curriculum-fs-large {
+                font-size: 12px;
+            }
+
+            .curriculum-fs-small {
+                font-size: 10px;
+            }
+        }
     </style>
     <script>
-        const data = ["red", "yellow", "blue", "green", "brown", "orange", "aqua", "lightblue", "gray", "red", "yellow", "blue", "green", "brown", "orange", "aqua", "lightblue", "gray"]
         document.addEventListener("DOMContentLoaded", () => {
-            const targets = document.querySelectorAll(".child");
-            console.log(targets)
-            for (let index = 0; index < targets.length; index++) {
-                targets[index].classList.add(`div${index + 1}`)
-                targets[index].style.backgroundColor = `${data[index]}`
-                if (index === 16) {
-                    targets[index].style.backgroundColor = "transparent"
-                    targets[index].textContent = ""
+            const rows = [
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "weeks-range-header curriculum-box-padding",
+                            text: "Weeks 1-5",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "weeks-range-header curriculum-box-padding",
+                            text: "Weeks 6-14",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "weeks-range-header curriculum-box-padding",
+                            text: "Weeks 15-21",
+                            styles: "grid-column: span 10 / span 10;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-large",
+                    blocks: [
+                        {
+                            classes: "module-header curriculum-box-padding curriculum-box-margin",
+                            text: "Core",
+                            styles: "border-left: none; grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "module-header curriculum-box-padding curriculum-box-margin",
+                            text: "OOP",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "module-header curriculum-box-padding curriculum-box-margin",
+                            text: "DSA",
+                            styles: "grid-column: span 10 / span 10;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                            text: "Core concepts, Solve Tasks",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "curriculum-box pr-box curriculum-box-margin"
+                        },
+                        {
+                            classes: "curriculum-box sp-box"
+                        },
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                            text: "OOP, Solve Workshops",
+                            styles: "grid-column: span 6 / span 6;"
+                        },
+                        {
+                            classes: "curriculum-box pr-box curriculum-box-margin",
+                        },
+                        {
+                            classes: "curriculum-box sp-box"
+                        },
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                            text: "DSA, Solve Tasks",
+                            styles: "grid-column: span 7 / span 7;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box",
+                        },
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                        },
+                        {
+                            classes: "curriculum-box pr-box curriculum-box-margin",
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            text: "Self-leadership",
+                            styles: "grid-column: span 11 / span 11;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box curriculum-box-margin"
+                        },
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            styles: "grid-column: span 2 / span 2;"
+                        },
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            text: "Peak Performance",
+                            styles: "grid-column: span 5 / span 5;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box curriculum-box-margin"
+                        },
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            text: "People Excellence",
+                            styles: "grid-column: span 7 / span 7;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box curriculum-box-margin"
+                        },
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            styles: "grid-column: span 2 / span 2;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "curriculum-box tp-box",
+                            text: "OOP Team Project",
+                            styles: "grid-column: span 9 / span 9; grid-column-start: 12;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    styles: "border-bottom: 2px solid gray;",
+                    blocks: [
+                        {
+                            classes: "curriculum-box m-box curriculum-box-margin",
+                            text: "Mentorship",
+                            styles: "grid-column: span 10 / span 10; grid-column-start: 2;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "weeks-range-header curriculum-box-padding",
+                            text: "Weeks 22-28",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "weeks-range-header curriculum-box-padding",
+                            text: "Weeks 29-32",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "weeks-range-header curriculum-box-padding",
+                            text: "Weeks 33-37",
+                            styles: "grid-column: span 10 / span 10;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-large",
+                    blocks: [
+                        {
+                            classes: "module-header curriculum-box-padding curriculum-box-margin",
+                            text: "Web Backend",
+                            styles: "border-left: none; grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "module-header curriculum-box-padding curriculum-box-margin",
+                            text: "Web Frontend",
+                            styles: "grid-column: span 10 / span 10;"
+                        },
+                        {
+                            classes: "module-header curriculum-box-padding curriculum-box-margin",
+                            text: "Final",
+                            styles: "grid-column: span 10 / span 10;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                            text: "Databases and Web apps",
+                            styles: "grid-column: span 8 / span 8;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box curriculum-box-margin",
+                        },
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin"
+                        },
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                            text: "Template engines and themes",
+                            styles: "grid-column: span 8 / span 8;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box"
+                        },
+                        {
+                            classes: "curriculum-box pr-box curriculum-box-margin"
+                        },
+                        {
+                            classes: "curriculum-box tech-box curriculum-box-margin",
+                            text: "Web Project Consultations",
+                            styles: "grid-column: span 9 / span 9;"
+                        },
+                        {
+                            classes: "curriculum-box pr-box curriculum-box-margin"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            text: "Career Jumpstart",
+                            styles: "grid-column: span 8 / span 8; grid-column-start: 11;"
+                        },
+                        {
+                            classes: "curriculum-box sp-box curriculum-box-margin" 
+                        },
+                        {
+                            classes: "curriculum-box ss-box curriculum-box-margin",
+                            text: "Career Jumpstart",
+                            styles: "grid-column: span 11 / span 11;"
+                        }
+                    ]
+                },
+                {
+                    classes: "curriculum-grid-row curriculum-fs-small",
+                    blocks: [
+                        {
+                            classes: "curriculum-box tp-box",
+                            text: "Web Team Project",
+                            styles: "grid-column: span 11 / span 11; grid-column-start: 20;"
+                        }
+                    ]
                 }
+            ]
+            const curriculumGrid = document.querySelector(".curriculum-grid-container")
+            for (const row of rows) {
+                const newRow = document.createElement("div")
+                newRow.setAttribute("class", row.classes)
+                for (const block of row.blocks) {
+                    const newBlock = document.createElement("div")
+                    newBlock.setAttribute("class", block.classes)
+                    if ("text" in block) {
+                        newBlock.innerText = block.text
+                    }
+                    if ("styles" in block) {
+                        newBlock.setAttribute("style", block.styles)
+                    }
+                    newRow.appendChild(newBlock)
+                }
+                curriculumGrid.appendChild(newRow)
             }
         });
     </script>
